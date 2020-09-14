@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sdiego <sdiego@student.42.fr>              +#+  +:+       +#+         #
+#    By: sdiego <sdiego@student.21-school.ru>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/17 13:24:05 by aannara           #+#    #+#              #
-#    Updated: 2020/08/25 09:06:49 by sdiego           ###   ########.fr        #
+#    Updated: 2020/09/07 16:56:56 by sdiego           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ $(NAME): $(OBJ) $(HEADERS)
 	ar rc $(NAME) $(OBJ)
 
 .c.o: $(HEADERS)
-	gcc -Wall -Wextra -Werror $(CFLAGS) -I./$(INCLUDES) -c $< -o $@
+	gcc -Wall -Wextra -Werror $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 
 clean:
 	rm -fr ./src/*.o
