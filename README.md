@@ -2,7 +2,7 @@
 
 ft_printf must achieve the following mandatory requirements:  
   
-* Manage the following conversions: `s`, `p`, `d`, `i`, `o`, `u`, `x`, `c`.
+* Manage the following conversions: `s`, `p`, `d`, `i`, `o`, `u`, `x`, `c`, `f`.
 * Manage `%%`
 * Manage the flags `#`, `0`, `-`, `+` & `space`
 * Manage the minimum field-width
